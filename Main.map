@@ -1,0 +1,78 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Tue Nov 28 19:10:43 2017
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x0000ea
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000074      
+            117 out of 8454 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   ABERTA   0x000049    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    ABRIR   0x00005f    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                   ALARME   0x000016    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     AND0   0x000023    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     AND1   0x000028    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     AND2   0x00002d    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     AND3   0x000032    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    DESC1   0x00001a    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    DESC2   0x00001d    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    DESC3   0x000020    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     DOOR   0x00004b    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                  ESPERA0   0x000053    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                  FECHADA   0x000050    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                   INICIO   0x000017    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     LOOP   0x00003e    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP1   0x000040    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP2   0x00003c    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP3   0x000065    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP4   0x000067    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP5   0x000069    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    POSIÇ   0x000037    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                   SEGURA   0x00003a    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    SETUP   0x000001    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                      VOL   0x000070    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    SETUP   0x000001    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                   ALARME   0x000016    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                   INICIO   0x000017    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    DESC1   0x00001a    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    DESC2   0x00001d    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    DESC3   0x000020    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     AND0   0x000023    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     AND1   0x000028    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     AND2   0x00002d    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     AND3   0x000032    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    POSIÇ   0x000037    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                   SEGURA   0x00003a    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP2   0x00003c    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     LOOP   0x00003e    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP1   0x000040    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                   ABERTA   0x000049    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                     DOOR   0x00004b    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                  FECHADA   0x000050    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                  ESPERA0   0x000053    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    ABRIR   0x00005f    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP3   0x000065    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP4   0x000067    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                    LOOP5   0x000069    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+                      VOL   0x000070    program     static C:\Users\Rafael\Documents\Facul\Micro\Elevador\Main.asm
+
+
