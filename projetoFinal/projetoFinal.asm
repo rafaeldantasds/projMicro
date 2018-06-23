@@ -18,6 +18,7 @@ list p=16f877a
 #define tela1 0x85,1
 #define tela2 0x85,2
 #define tela3 0x85,3
+
 #define flagEst 0x85,4
 #define flagMov 0x85,5
 
@@ -56,11 +57,164 @@ list p=16f877a
 
 ;variavel
 #define cAndar 0x20
-#define cSensor 0x20
+#define cSensor 0x21
 
 org 0x00
 goto inicio
 
 org 0x04
+;interrupção rb0 por excesso de peso
 goto peso
 
+;		display dos andares
+goto display
+
+;		verifica se está parado
+goto verificaParado
+;		verifica se o elevador está subindo ou descendo
+goto verificaSentido
+
+display:
+		;mostra andar 0
+		d0:
+		bcf tela0
+		bcf tela1
+		bcf tela2
+		bcf tela3
+		return
+		
+		;mostra andar 1
+		d1:
+		bsf tela0
+		bcf tela1
+		bcf tela2
+		bcf tela3
+		goto andar
+		
+		;mostra andar 2
+		d2:
+		bcf tela0
+		bsf tela1
+		bcf tela2
+		bcf tela3
+		goto andar
+		
+		;mostra andar 3
+		d3:
+		bsf tela0
+		bsf tela1
+		bcf tela2
+		bcf tela3
+		goto andar
+		
+		;mostra andar 4
+		d4:
+		bcf tela0
+		bcf tela1
+		bsf tela2
+		bcf tela3
+		goto andar
+		
+		;mostra andar 5
+		d5:
+		bsf tela0
+		bcf tela1
+		bsf tela2
+		bcf tela3
+		goto andar
+		
+		;mostra andar 6
+		d6:
+		bcf tela0
+		bsf tela1
+		bsf tela2
+		bcf tela3
+		goto andar
+		
+		;mostra andar 7
+		d7:
+		bsf tela0
+		bsf tela1
+		bsf tela2
+		bcf tela3
+		goto andar
+		
+		;mostra andar E
+		dErro:
+		bcf tela0
+		bsf tela1
+		bsf tela2
+		bsf tela3
+		goto IntErro
+		
+sensor: ;sensor por andar, envia o andar para o display
+		btfsc sensor0
+		call d0
+		btfsc sensor1
+		goto d1
+		btfsc sensor2
+		goto d2
+		btfsc sensor3
+		goto d3
+		btfsc sensor4
+		goto d4
+		btfsc sensor5
+		goto d5
+		btfsc sensor6
+		goto d6
+		btfsc sensor7
+		goto d7
+		goto andar
+		
+andar: ; chama o elevador no andar, testa se está parado
+		btfss andar0
+		goto andar1
+		btfss flagEst
+		goto sensor
+		goto verificaSentido
+		
+		btfss andar1
+		goto andar2
+		btfss flagEst
+		goto sensor
+		goto verificaSentido
+		
+		btfss andar2
+		goto andar3
+		btfss flagEst
+		goto sensor
+		goto verificaSentido
+		
+		btfss andar3
+		goto andar4
+		btfss flagEst
+		goto sensor
+		goto verificaSentido
+		
+		btfss andar4
+		goto andar5
+		btfss flagEst
+		goto sensor
+		goto verificaSentido
+		
+		btfss andar5
+		goto andar6
+		btfss flagEst
+		goto sensor
+		goto verificaSentido
+		
+		btfss andar6
+		goto andar7
+		btfss flagEst
+		goto sensor
+		goto verificaSentido
+		
+		btfss andar7
+		goto andar
+		btfss flagEst
+		goto sensor
+		goto verificaSentido
+		
+verificaSentido:		
+		
+		end
